@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    padding: 50px;
+}
+.min-container{
+    background-color: #e1edf5;
+    padding: 20px 500px;
+}
+
+.container .back-image {
+  height: 390px; 
+  background-image: url(./images/image.png); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100%; 
+  align-content: center;
+  text-align: center;
+}
+
+.container .back-image h1 {
+    color: white;
+}
+.about-me {
+    border: solid 1px rgb(176, 176, 176);
+    background-color: white;
+    padding: 35px 10px;
+    text-align: center;
+    width: 800px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+
+}
+h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.about-me p{
+    color: rgb(109, 109, 109);
+}
+.my-skills
+, .my-projects {
+    margin-bottom: 100px;
+}
+.my-skills  h3{
+    margin-left: 100px;
+}
+.my-skills ul li {
+    color: rgb(46, 46, 46);
+}
+.my-projects h3 {
+    margin-left: 130px ;
+}
+table thead tr {
+    background-color: rgb(55, 154, 240);
+}
+ th ,
+ td {
+    padding: 10px;
+}
+.my-projects table {
+    margin-left:120px ;
+}
+table {
+    border-collapse: collapse;
+}
+.contact-me h3{
+    margin-left: 120px;
+}
+.contact-me button {
+    background-color: rgb(55, 154, 240);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    margin-left: 360px;
+}
+.footer {
+    background-color: rgb(53, 42, 42);
+    color: white;
+    text-align: center;
+    height: 70px;
+    align-content: center;
+    width: 100%;
+}
+.footer {
+    padding-left: 120px;
+}

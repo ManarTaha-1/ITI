@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form | JS</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 204, 0);
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        span{
+            margin-left: 10px;
+            color: red;
+        }
+        table{
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        thead th {
+            border: 2px solid black;
+        }
+        thead tr{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+<form onsubmit="addUser(event)">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span class="n"></span>
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <span class="a"></span>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span class="e"></span>
+    </div>
+    <button type="submit">Add</button>
+    <button type="reset">Reset</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th><th>Age</th><th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="userTable"></tbody>
+</table>
+
+
+</body>
+<script src="main.js"></script>
+</html>

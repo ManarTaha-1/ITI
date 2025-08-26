@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Task</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h3>User Info Form</h3>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="email" placeholder="Enter Email">
+    <input type="text" id="age" placeholder="Enter Age">
+    <button id="showInfo">Show Info</button>
+    <button id="clearInfo">Clear Info</button>
+
+    <div id="messages"></div>
+    <div id="infoBox" class="info-box"></div>
+  </div>
+
+  <h3>Toggle Box Appearance</h3>
+  <div id="box1" class="box">Hello I'm Manar Taha 👋 </div>
+  <button class="toggle-btn" data-target="#box1">Toggle Style</button><br>
+
+  <div id="box2" class="box">Faculty of computers and information 💻</div>
+  <button class="toggle-btn" data-target="#box2">Toggle Style</button><br>
+
+  <div id="box3" class="box">From Ismailia 😊</div>
+  <button class="toggle-btn" data-target="#box3">Toggle Style</button><br>
+
+  <button id="resetAll">Reset All Boxes</button>
+
+  <h3>Modify on Hover and Click</h3>
+  <p id="hoverPara" title="Original Title">Hover over me to change title</p>
+  <button id="changeContent">Change Content</button>
+
+</body>
+<script src="main.js"></script>
+</html>

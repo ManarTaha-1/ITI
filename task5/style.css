@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::selection {
+    background-color: rgb(59, 105, 134);
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    margin: 30px;
+}
+.container header {
+    background-color: rgb(28, 100, 145);
+    color: white;
+    padding: 30px;
+}
+header span {
+    color:  white;
+    padding: 15px;
+    font-size: 20px;
+}
+.header{ 
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+.par{
+    font-size: 30px;
+    font-weight: 400;
+}
+.center {
+    text-align: center;
+}
+.pargraph {
+    margin: 2px 50px;
+}
+.end {
+    border-bottom: 10px solid #eee;
+}
+h2{
+    padding-bottom: 10px;
+}
+.about {
+    font-size: 40px;
+}
+img {
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 200px;
+}
+section {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(202, 202, 202);
+    border-left: 100px solid #eee;
+    border-right: 100px solid #eee;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+    padding: 20px;
+}
+.quote::before {
+    content: "🍴";
+    font-size: 25px;
+    background-color: rgb(98, 110, 117);
+    border-radius: 20px;
+}
+.quote::after {
+    content: "🍴";
+    font-size: 18px;
+    background-color: rgb(98, 110, 117);
+    border-radius: 20px;
+}
+.up {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid rgb(76, 39, 187);
+    border-radius: 10px;
+}
+.up a{
+    text-decoration: none;
+}
+.btn{
+    background-color: rgb(28, 100, 145);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+footer span {
+    color: rgb(243, 228, 9);
+    font-weight: 400;
+    font-size: 20px;
+}
+footer {
+    background-color: rgb(36, 28, 28);
+    color: white;
+    padding: 20px 0;
+}

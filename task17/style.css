@@ -1,0 +1,596 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: centerك
+}
+/* header start  */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(38, 41, 41);
+    padding: 10px 100px;
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    margin: 5px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul li{
+    margin-right: 20px;
+    color: #969696;
+}
+.open {
+    color: white;
+    font-weight: 600;
+}
+.images{
+    background-image: url("./images/superhero1.png");
+    height: 500px;
+    position: relative;
+    background-position: center;
+
+}
+.fa-angle-right,
+.fa-angle-left {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.fa-angle-right {
+    right: 20px;
+}
+.fa-angle-left {
+    left: 20px;
+}
+.overlay p{
+    margin-top: 10px;
+}
+header button , .claim-offer {
+    background-color: rgb(255, 191, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: 600;
+}
+.overlay{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: rgba(233, 233, 233, 0.113);
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 30px;
+  height: 4px;
+  background: #848484;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dot.active {
+  background: white; 
+}
+/* header end  */
+/* features section start  */
+.features-container {
+    background-color: #f9f9f9;
+    padding: 50px 100px;
+}
+.title {
+    text-align: center;
+    margin: 50px 0;
+}
+.title h1 {
+    font-size: 35px;
+    color: #333;
+}
+.title p {
+    font-size: 15px;
+    color: #8c8c8c;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin-top: 30px;
+}
+.card i {
+    font-size: 40px;
+    color: #ffcc00;
+}
+.card i.fa-shield {
+    color: #007bff;
+}   
+.card i.fa-eye {
+    color: #ff1307;
+}
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+.card button {
+    background-color: #ffcc00;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.card button.new {
+    background-color: #28a745;
+}
+.card button.popular {
+    background-color: #007bff;
+}
+.card button.coming {
+    background-color: #ffc107;
+}
+/* features section end */
+/* our services section start  */
+.our-services {
+    background-color: white;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-services h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.text-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.image1-sec{
+    margin-bottom: 50px;
+}
+.image1-sec img,
+.image2-sec img {
+    width: 481px;
+}
+.satisfacation,
+.success-rate {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.text-container h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+.satisfacation{
+    background-color: #28a745;
+    width: 95%;
+    border-right: #c6c6c6 solid 30px;
+    border-radius: 10px;
+}
+.success-rate{
+    background-color: #007bff;
+    width: 90%;
+    border-right: #c6c6c6 solid 30px;
+    border-radius: 10px;
+}
+.text-container button {
+    border: #007bff 2px solid;
+    color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: 600;
+    background-color: white;
+}
+/* our services section end*/
+/* start offer section  */
+section.offer-section {
+    background-color: rgb(250, 228, 161);
+    text-align: center;
+    margin:0 200px;
+    padding: 20px 0;
+}
+.offer-section span{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.offer-section p{
+    margin-top: 15px;
+}
+
+
+/* end offer section  */
+/* client section start  */
+
+.client-section {
+    background-color: #f9f9f9;
+    padding: 50px 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client-section h3 {
+    font-size: 30px;
+}
+.client-section .client {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    width: 500px;
+    margin: 10px 15px;
+    text-align: center;
+}
+.client-section .client img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.client-section .client h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.client-section .client .stars {
+    color: #ffcc00;
+}
+.client-section .client p {
+    font-size: 14px;
+    color: #666;
+}
+.stars-image{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.stars h4 {
+    color: black;
+}
+
+/* client section end  */
+/* contact section start  */
+
+.contact-us {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    background-color: white;
+    margin-top: 50px;
+    width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* input width equal container width */
+input{
+    width: 450px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.msg , .serv{
+    display: flex;
+    flex-direction: column;
+}
+.msg input, .serv select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-us button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* contact section end */
+/* start footer section  */
+footer {
+    background-color: rgb(38, 41, 41);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+footer .logo i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+footer ul li {
+    margin: 0 10px;
+}
+footer ul li i {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.reserved {
+    margin-top: 70px;
+}
+/* end footer section  */
+/* responsive design */
+/* ✅ تحسين الريسبونسيف */
+@media (max-width: 992px) {
+  header nav {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  ul li {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .logo i,
+  .card i,
+  footer .logo i,
+  footer ul li i {
+    font-size: 20px;
+  }
+
+  .overlay {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .overlay button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .features-container,
+  .our-services,
+  .client-section,
+  .contact-container,
+  .offer-section {
+    padding: 30px 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .card button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .image1-sec img,
+  .image2-sec img {
+    width: 100%;
+  }
+
+  .text-container h4 {
+    font-size: 16px;
+  }
+
+  .satisfacation,
+  .success-rate {
+    font-size: 13px;
+    width: 100%;
+    border-right: none;
+  }
+
+  input,
+  .msg input,
+  .serv select {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .contact-us button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .client-section .client {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .client-section .client h4 {
+    font-size: 16px;
+  }
+
+  .client-section .client p {
+    font-size: 13px;
+  }
+
+  section.offer-section {
+    margin: 0 20px;
+    padding: 20px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .reserved {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title h1 {
+    font-size: 24px;
+  }
+
+  .title p {
+    font-size: 12px;
+  }
+
+  .card i {
+    font-size: 18px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .client-section .client h4 {
+    font-size: 14px;
+  }
+
+  .client-section .client p {
+    font-size: 12px;
+  }
+
+  .contact-us button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .reserved {
+    font-size: 11px;
+  }
+
+  .fa-angle-right,
+  .fa-angle-left {
+    font-size: 18px;
+  }
+
+  .images {
+    height: 300px;
+  }
+
+  .overlay {
+    padding: 15px;
+  }
+}
+

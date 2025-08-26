@@ -1,0 +1,178 @@
+* {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+header nav img {
+  width: 100px;
+  height: 40px;
+  margin: 0 40px 0 10px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 8px 14px;
+  font-size: 11px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  line-height: 24px;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #008fe2;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+header nav ul li:hover {
+  background-color: #2d529f;
+  color: white;
+}
+
+header nav ul .home {
+  background-color: #2d529f;
+  color: white;
+}
+
+header .overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+header .image img {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+header .content {
+  position: absolute;
+  bottom: 130px;
+  left: 100px;
+  z-index: 3;
+  color: white;
+}
+
+header .content h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+header .content h4 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+header .content p {
+  text-decoration: underline;
+}
+
+section {
+  margin: 40px 50px;
+}
+
+section .title h2 {
+  text-transform: capitalize;
+}
+
+section .title p {
+  font-size: 11px;
+  color: #333;
+}
+
+section .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+section .cards .image {
+  width: 40px;
+  height: 20px;
+  z-index: 1;
+}
+
+section .cards .card {
+  width: 24%;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+section .cards .card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #008fe2;
+}
+
+section .cards .card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+section .cards .btn button {
+  border: solid 2px #333;
+  text-align: center;
+  background-color: white;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  margin-left: 450px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+section .cards .btn button:hover {
+  background-color: #333;
+  color: white;
+}
+
+section .doctor-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .doctor-cards .doctor-card .image img {
+  height: 200px;
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

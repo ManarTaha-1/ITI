@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles</title>
+    <style>
+        #changeColor {
+            background-color: red;
+            border: 10px solid rgb(156, 156, 156);
+            width: 70px;
+            height: 30px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <button id="clickMe">click me</button>
+    <span id="changeColor"></span>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        const button = document.getElementById('clickMe');
+let circles = [];
+
+button.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    circles = []; // نفضي اللي فات
+    for (let i = 0; i < 10; i++) {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const radius = Math.random() * 50 + 10;
+
+        circles.push({x, y, radius}); // نخزن الدواير
+
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(28, 137, 205, 0.5)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(28, 137, 205, 1)';
+        ctx.stroke();
+    }
+});
+
+colorButton.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); 
+    circles.forEach(c => {
+        ctx.beginPath();
+        ctx.arc(c.x, c.y, c.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.strokeStyle = 'red';
+        ctx.stroke();
+    });
+});
+    </script>
+</body>
+</html>

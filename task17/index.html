@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>SuperHero Services</h3>
+                </div>
+                <ul>
+                    <li class="open">Home</li>
+                    <li>Features</li>
+                    <li>Services</li>
+                    <li>Testimonials</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="images">
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="overlay">
+                    <h1>24/7 Emergency Services</h1>
+                    <p>We're always ready to save the day</p>
+                    <button>Call Now</button>
+                    <div class="indicators">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="features-container">
+            <div class="title">
+                <h1>Our Super Features</h1>
+                <p>What makes us different from ordinary services </p>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Super Speed</h3>
+                    <p>Our services are lightning fast, ensuring you get help when you need it most.</p>
+                    <button class="new">New</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-shield"></i>
+                    <h3>Invincible protection</h3>
+                    <p>Our services are designed to keep you safe and secure at all times.</p>
+                    <button class="popular">Popular</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-eye"></i>
+                    <h3>X-Ray Vision</h3>
+                    <p>Our services allow you to see through walls and obstacles, providing unparalleled insight.</p>
+                    <button class="coming">Coming Soon</button>
+                </div>
+            </div>
+        </section>
+        <section class="our-services">
+            <h3>Our Services</h3>
+            <div class="image1-sec">
+                <img src="./images/superhero1.png" alt="SuperHero Services">
+                <div class="text-container">
+                    <h4>VIP Protection</h4>
+                    <p>Personalized security solutions for high-profile clients.</p>
+                    <div class="satisfacation">
+                        95% satisfaction 
+                    </div>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="image2-sec">
+                <img src="./images/superhero1.png" alt="SuperHero Services">
+                <div class="text-container">
+                    <h4>Disaster Response</h4>
+                    <p>Rapid response teams ready to assist in any emergency.</p>
+                    <div class="success-rate">
+                        90% satisfaction 
+                    </div>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section class="offer-section">
+            <h3>Special Offer!</h3>
+            <div class="offer-card">
+                <p>Get 20% off on your first service with code <span>HER020</span></p>
+                <button class="claim-offer">Claim Offer</button>
+            </div>
+        </section>
+        <section class="client-section">
+            <h3>What Our Clients Say</h3>
+            <div class="client">
+                <div class="stars-image">
+                    <img src="./images/superhero1.png" alt="Client 1">
+                    <div class="stars">
+                        <h4>Lios Lane</h4> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <p>"These heroes saved me in my time of need. I wouldn't trust anyone else!
+                    their services are the best! they are truly amazing!"</p>
+                </div>
+                <div class="client">
+                    <div class="stars-image">
+                        <img src="./images/superhero1.png" alt="Client 1">
+                        <div class="stars">
+                            <h4>Jimmy Olsen</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                    </div>
+                <p>"These heroes saved me in my time of need. I wouldn't trust anyone else!
+                    their services are the best! they are truly amazing!"</p>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="contact-container">
+                <h3>Contact Us</h3>
+                <form>
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="serv">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="emergency">Emergency Response</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="training">Training</option>
+                        </select>
+                    </div>
+                    <div class="msg">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="logo">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Superhero Services</span>
+                </div>
+                <div class="quick">
+                    Quick Links
+                </div>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="reserved">
+                <p>© 2023 Superhero Services. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

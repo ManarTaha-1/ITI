@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color: #ffc1c1;
+            display: flex;
+            justify-content: center;
+        }
+        fieldset {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend style="color: red;">Log In</legend>
+        <form action="">
+            <label for="user-name">User Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your User name here!">
+            <br>
+            <label for="password">PassWord:</label>
+            <input type="password" id="password">
+            <br>
+            <label for="location">Select Your Location:</label>
+            <select name="location" id="location">
+                <optgroup label="Africa">
+                    <option value="">Egypt</option>
+                    <option value="">Sudan</option>
+                    <option value="">Namibia</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="">France</option>
+                    <option value="">Russia</option>
+                    <option value="">UK</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option value="">Canada</option>
+                    <option value="">Mexico</option>
+                    <option value="">USA</option>
+                </optgroup>
+                
+            </select>
+            <br>
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember<u>M</u>e</label>
+            <br>
+            <button type="submit">log In</button>
+        </form>
+    </fieldset>
+    
+</body>
+</html>

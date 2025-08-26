@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .par{
+            font-weight: 600;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colors</h1>
+    <p>Here are some colors:</p>
+    <ul>
+        <li>
+            <label for="red-range">Red:</label>
+            <input type="range" id="red-range" min="0" max="255" value="0" class="red-range" title="Red color value">
+        </li>
+        <li>
+            <label for="green-range">Green:</label>
+            <input type="range" id="green-range" min="0" max="255" value="0" class="green-range" title="Green color value">
+        </li>
+        <li>
+            <label for="blue-range">Blue:</label>
+            <input type="range" id="blue-range" min="0" max="255" value="0" class="blue-range" title="Blue color value">
+        </li>
+    </ul>
+    <div class="par">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aliquam ad fuga eos sit, quos architecto quaerat consequuntur quo beatae atque amet molestias vel error libero culpa excepturi deserunt iusto.
+    </div>
+</body>
+<script>
+    const redRange = document.getElementById("red-range");
+    const greenRange = document.getElementById("green-range");
+    const blueRange = document.getElementById("blue-range");
+    const par = document.querySelector(".par");
+
+    function updateColor() {
+        const red = redRange.value;
+        const green = greenRange.value;
+        const blue = blueRange.value;
+        par.style.color = `rgb(${red}, ${green}, ${blue})`;
+    }
+    redRange.addEventListener("input", updateColor);
+    greenRange.addEventListener("input", updateColor);
+    blueRange.addEventListener("input", updateColor);
+</script>
+</html>

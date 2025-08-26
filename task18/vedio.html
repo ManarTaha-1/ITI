@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+            --main-color: #1c89cd;
+            --secondary-color: white;
+        }
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        video{
+            width: 1000px;
+        }
+        h1{
+            color: var(--main-color);
+        }
+        button{
+            background-color: var(--main-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.5s ease-in-out;
+        }
+        button:hover{
+            background-color: var(--secondary-color);
+            color: var(--main-color);
+        }
+        .controls{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .current-time ,.duration {
+            color: var(--main-color);
+            font-size: 25px;
+            margin-right: 10px;
+        }
+        .seek-bar input{
+            width: 980px;
+        }
+        .my-control {
+            background-color: rgba(116, 198, 249, 0.5);
+            width: 981px;
+            padding: 10px;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frozen</h1>
+        <p>Enjoy the movie!</p>
+        <video src="./video/frozen.mp4"></video>
+        <div class="my-control">
+            <div class="seek-bar">
+                <input type="range" id="videoRange" class="video-range" min="0" max="100" step="1" value="0" title="Seek video">
+            </div>
+            <div class="controls">
+                <span class="current-time">0:00</span>
+                <span class="duration">/ 0:58</span>
+                <button class="play">Play</button>
+                <button class="pause">Pause</button>
+                <button class="fullscreen">Fullscreen</button>
+                <button class="mute">Toggle Mute</button>
+                <button class="reset">Reset</button>
+                <label for="volumeRange">Volume:</label>
+                <input type="range" id="volumeRange" class="video-range" min="0" max="100" step="1" value="100" title="Adjust volume">
+                <label for="speedRange">Speed:</label>
+                <input type="range" id="speedRange" class="speed" min="0" max="16" step="1" value="1" title="Adjust playback speed">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const video = document.querySelector('video');
+    const playButton = document.querySelector('.play');
+    const pauseButton = document.querySelector('.pause');
+    const speedButton = document.querySelector('.speed');
+    const fullscreenButton = document.querySelector('.fullscreen');
+    const muteButton = document.querySelector('.mute');
+    const resetButton = document.querySelector('.reset');
+    const currentTimeDisplay = document.querySelector('.current-time');
+    const durationDisplay = document.querySelector('.duration');
+    const videoRange = document.querySelector('#videoRange');
+    const volumeRange = document.querySelector('#volumeRange');
+
+    playButton.addEventListener('click', () => {
+        video.play();
+    });
+
+    pauseButton.addEventListener('click', () => {
+        video.pause();
+    });
+
+    speedButton.addEventListener('input', () => {
+        video.playbackRate = speedButton.value;
+    });
+
+    fullscreenButton.addEventListener('click', () => {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        }
+    });
+
+    muteButton.addEventListener('click', () => {
+        video.muted = !video.muted;
+    });
+
+    resetButton.addEventListener('click', () => {
+        video.currentTime = 0;
+        video.autoplay();
+    });
+
+    video.addEventListener('timeupdate', () => {
+        const minutes = Math.floor(video.currentTime / 60);
+        const seconds = Math.floor(video.currentTime % 60);
+        currentTimeDisplay.textContent = `${minutes}:${seconds < 10 ? '0':''}${seconds}`;
+        const progress = (video.currentTime / video.duration) * 100;
+        videoRange.value = progress;
+    });
+
+    videoRange.addEventListener('input', () => {
+        video.currentTime = (videoRange.value / 100) * video.duration;
+    });
+
+    volumeRange.addEventListener('input', () => {
+        video.volume = volumeRange.value / 100;
+    });
+
+</script>
+</html>
